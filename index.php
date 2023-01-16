@@ -9,3 +9,10 @@
 
 http://php.net/manual/fr/function.mt-rand.php
 */
+
+if (isset($_POST['x']) && isset($_POST['y'])) {
+    $x = $_POST['x'];
+    $y = $_POST['y'];
+    $random_number = mt_rand($x, $y);
+    echo $random_number;
+}
